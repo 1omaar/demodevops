@@ -1,11 +1,19 @@
-//package com.example.projetmpisi.bdd;
-//
-//import org.junit.platform.suite.api.*;
-//import static io.cucumber.junit.platform.engine.Constants.*;
-//@Suite
-//@IncludeEngines("cucumber")
-//@SelectClasspathResource("features")
-//@ConfigurationParameter(key = GLUE_PROPERTY_NAME, value = "org.example.DevOpsMPISI.bdd")
-//@ConfigurationParameter(key = PLUGIN_PROPERTY_NAME, value = "pretty, html:target/cucumber-reports.html")
-//public class RunCucumberTest {
-//}
+package com.example.projetmpisi.bdd;
+
+import org.junit.platform.suite.api.*;
+
+import static io.cucumber.junit.platform.engine.Constants.*;
+
+@Suite
+@IncludeEngines("cucumber")
+@SelectClasspathResource("features")
+@ConfigurationParameter(
+        key = GLUE_PROPERTY_NAME,
+        value = "com.example.projetmpisi.bdd"
+)
+@ConfigurationParameter(
+        key = PLUGIN_PROPERTY_NAME,
+        value = "pretty, html:target/cucumber-reports.html"
+)
+public class RunCucumberTest {
+}
