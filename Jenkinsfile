@@ -2,11 +2,11 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven-3.9'
+        maven 'Maven-3.9.12'
     }
 
     environment {
-        APP_NAME = 'mon-app-springboot'
+        APP_NAME = 'demodevops'
     }
 
     stages {
